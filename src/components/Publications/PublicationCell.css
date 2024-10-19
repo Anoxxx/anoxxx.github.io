@@ -1,0 +1,48 @@
+.publication-cell {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 16px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+  
+  .publication-header {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .publication-title {
+    font-size: 0.9rem;
+    margin: 1;
+  }
+  
+  .publication-authors {
+    color: #777;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+  
+  .publication-source {
+    font-size: 0.9rem;
+    color: #777;
+    margin: 0;
+  }
+  
+  .publication-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .publication-year {
+    font-weight: bold;
+  }
+  
+  .publication-image img {
+    max-width: 100px;
+    height: auto;
+    border-radius: 4px;
+  }
+  

@@ -6,29 +6,28 @@ import ContactIcons from '../Contact/ContactIcons';
 const { PUBLIC_URL } = process.env; // set automatically from package.json:homepage
 
 const SideBar = () => (
-  <section id="sidebar">
+  <section id="sidebar" style={{ fontStretch: 'expanded' }}>
     <section id="intro">
       <Link to="/" className="logo">
         <img src={`${PUBLIC_URL}/images/me.jpg`} alt="" />
       </Link>
       <header>
-        <h2>Michael D&apos;Angelo</h2>
-        <p>
-          <a href="mailto:michael@mldangelo.com">michael@mldangelo.com</a>
-        </p>
+        <h2>Zhengfei Zhang</h2>
+        <h3>张
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          &nbsp;正非&nbsp;&nbsp;[&#x0288;&#x0282;&#x0259;&#x0302;&#x014b; f&#x00e9;i]
+        </h3>
       </header>
     </section>
-
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I&apos;m Michael. I am a{' '}
-        <a href="https://icme.stanford.edu/">Stanford ICME</a> graduate, YC
-        alumnus, and the co-founder and CTO of{' '}
-        <a href="https://promptfoo.dev">Promptfoo</a>. Previously, I
-        was VP of Engineering at <a href="https://usesmileid.com">SmileID</a>,
-        co-founder and CTO of <a href="https://arthena.com">Arthena</a>, and
-        co-founded <a href="https://matroid.com">Matroid</a>.
+        Hi, I am Zhengfei. I am a{' '}
+        <a href="https://www.schwarzmanscholars.org/">Schwarzman Scholar</a>
+        {' '}and a Tsinghua{' '}
+        <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a> alumni.
+        I try to connect artificial intelligence (searching and learning)
+        and real-world needs (climate and policy) in a bilateral way.
       </p>
       <ul className="actions">
         <li>
@@ -37,7 +36,7 @@ const SideBar = () => (
               Learn More
             </Link>
           ) : (
-            <Link to="/about" className="button">
+            <Link to="/Miscellanies" className="button">
               About Me
             </Link>
           )}
@@ -48,7 +47,7 @@ const SideBar = () => (
     <section id="footer">
       <ContactIcons />
       <p className="copyright">
-        &copy; Michael D&apos;Angelo <Link to="/">mldangelo.com</Link>.
+        &copy; Zhengfei Zhang <Link to="/">zhengfei.info</Link>.
       </p>
     </section>
   </section>

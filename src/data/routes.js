@@ -1,28 +1,20 @@
 const routes = [
   {
     index: true,
-    label: "Michael D'Angelo",
+    label: 'Zhengfei Zhang',
     path: '/',
   },
   {
-    label: 'About',
-    path: '/about',
+    label: 'Publications',
+    path: '/publications',
+  },
+  {
+    label: 'Miscellanies',
+    path: '/miscellanies',
   },
   {
     label: 'Resume',
     path: '/resume',
-  },
-  {
-    label: 'Projects',
-    path: '/projects',
-  },
-  {
-    label: 'Stats',
-    path: '/stats',
-  },
-  {
-    label: 'Contact',
-    path: '/contact',
   },
 ];
 

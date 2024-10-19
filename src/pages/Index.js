@@ -6,8 +6,7 @@ import Main from '../layouts/Main';
 const Index = () => (
   <Main
     description={
-      "Michael D'Angelo's personal website. New York based Stanford ICME graduate, "
-      + 'VP of Engineering at Smile Identity, co-founder of Arthena and Matroid, and YC Alumni.'
+      "Zhengfei Zhang's Personal Website"
     }
   >
     <article className="post" id="index">
@@ -49,7 +48,7 @@ const Index = () => (
         <br /><br />
         Please feel free to read more{' '}
         <Link to="/miscellanies">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/projects">publications</Link>, or{' '}
+        <Link to="/resume">resume</Link>, <Link to="/publications">publications</Link>, or{' '}
         <Link to="/contact">contact</Link> me.
       </p>
       {/*

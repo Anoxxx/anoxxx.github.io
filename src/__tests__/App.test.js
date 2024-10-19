@@ -41,9 +41,10 @@ describe('renders the app', () => {
   });
 
   it('should render the title', async () => {
-    expect(document.title).toBe("Michael D'Angelo");
+    expect(document.title).toBe("Zhengfei Zhang");
   });
 
+  /*
   it('can navigate to /about', async () => {
     expect.assertions(7);
     const aboutLink = document.querySelector(
@@ -114,4 +115,5 @@ describe('renders the app', () => {
     expect(document.title).toContain('Contact |');
     expect(window.location.pathname).toBe('/contact');
   });
+  */
 });

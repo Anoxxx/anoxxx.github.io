@@ -41,7 +41,7 @@ describe('renders the app', () => {
   });
 
   it('should render the title', async () => {
-    expect(document.title).toBe("Zhengfei Zhang");
+    expect(document.title).toBe('Zhengfei Zhang');
   });
 
   /*

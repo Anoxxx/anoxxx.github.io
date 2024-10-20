@@ -49,12 +49,12 @@ const Index = () => (
         <br /><br />
         Please feel free to read more{' '}
         <Link to="/miscellanies">about me</Link>, or you can check out my{' '}
-        <Link to="/resume">resume</Link>, <Link to="/publications">publications</Link>, or{' '}
+        <a href="../../public/resume_zhengfei.pdf" target="_blank" rel="noopener noreferrer">resume</a>,
+        <Link to="/publications">publications</Link>, or{' '}
         <Link to="/contact">contact</Link> me.
       </p>
       {/*
       <p>
-        {' '}
         Source available{' '}
         <a href="https://github.com/mldangelo/personal-site">here</a>.
       </p>

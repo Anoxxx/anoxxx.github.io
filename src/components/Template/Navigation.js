@@ -22,7 +22,11 @@ const Navigation = () => (
           .filter((l) => !l.index)
           .map((l) => (
             <li key={l.label}>
-              <Link to={l.path}>{l.label}</Link>
+              {l.label === 'Resume' ? (
+                <a href="/resume_zhengfei.pdf" target="_blank" rel="noopener noreferrer">{l.label}</a>
+              ) : (
+                <Link to={l.path}>{l.label}</Link>
+              )}
             </li>
           ))}
       </ul>

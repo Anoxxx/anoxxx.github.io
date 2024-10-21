@@ -14,7 +14,7 @@ const routes = [
   },
   {
     label: 'Resume',
-    path: '/resume',
+    path: '/NotFound',
   },
 ];
 

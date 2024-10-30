@@ -26,8 +26,8 @@ const SideBar = () => (
         <a href="https://www.schwarzmanscholars.org/">Schwarzman Scholar</a>
         {' '}and a Tsinghua{' '}
         <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a> alumni.
-        I try to connect artificial intelligence (searching and learning)
-        and real-world needs (climate and policy) in a bilateral way.
+        I try to connect artificial intelligence (decision-making)
+        and real-world needs (education, climate and policy) in a bilateral way.
       </p>
       <ul className="actions">
         <li>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Main from '../layouts/Main';
+import PublicationCell from '../components/Publications/Cell'; // Import PublicationCell component
+import data from '../data/publications'; // Import publications data
 
 const Index = () => (
   <Main
@@ -43,17 +45,17 @@ const Index = () => (
             And how to address these difficulties theoretically?<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XibJqasAAAAJ&authuser=1&citation_for_view=XibJqasAAAAJ:u5HHmVD_uO8C"> [1]</a>
           </li>
           <li>
-            How to parse grammar from climate policy documents in different dimensions?
-            And can we in turn build a tool to assist revision? [working thesis]
+            How do we extract the evolving decision-making procedures{' '}
+            from climate policy documents? [working thesis]
           </li>
         </ul>
         One more thing.
-        I love duality and antithesis, and you can find reasons or outcomes reflected in me.
+        I love duality and antithesis; you can find reasons or outcomes reflected in me.
         <ul>
           <li>My first name has a literal meaning of &apos;right and wrong&apos; in Chinese.</li>
           <li>
-            My favorite city is Hangzhou, China, where a great lake sits at the center,{' '}
-            and thousands years of Chinese culture lies within the lake.
+            My favorite city and my hometown is Hangzhou, China, where a great lake sits at the center of this prosperous city,{' '}
+            and thousands of years of culture lie within the lake.
           </li>
         </ul>
         Please feel free to read more{' '}
@@ -67,6 +69,13 @@ const Index = () => (
         <a href="https://github.com/mldangelo/personal-site">here</a>.
       </p>
       */}
+
+      {/* Embed publications below the main content */}
+      <header><br /><br /></header>
+      <h2><Link to="/publications">Publications</Link></h2>
+      {data.map((publication) => (
+        <PublicationCell data={publication} key={publication.id} authorName="Zhengfei Zhang" />
+      ))}
     </article>
   </Main>
 );

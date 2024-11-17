@@ -23,7 +23,9 @@ const Navigation = () => (
           .map((l) => (
             <li key={l.label}>
               {l.label === 'Resume' ? (
-                <a href="/resume_zhengfei.pdf">{l.label}</a>
+                <a href="/resume_zhengfei.pdf" download target="_blank" rel="noopener noreferrer">
+                  {l.label}
+                </a>
               ) : (
                 <Link to={l.path}>{l.label}</Link>
               )}

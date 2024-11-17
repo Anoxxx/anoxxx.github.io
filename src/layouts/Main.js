@@ -21,6 +21,7 @@ const Main = (props) => (
     </Helmet>
     <div id="wrapper">
       <Navigation />
+      {props.fullPage ? <SideBar /> : null}
       <div id="main">{props.children}</div>
       {props.fullPage ? null : <SideBar />}
     </div>
@@ -41,7 +42,7 @@ Main.defaultProps = {
   children: null,
   fullPage: false,
   title: null,
-  description: "Michael D'Angelo's personal website.",
+  description: "Zhengfei Zhang's personal website.",
 };
 
 export default Main;

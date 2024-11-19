@@ -10,11 +10,15 @@ const Navigation = () => (
     <h1 className="index-link">
       {routes
         .filter((l) => l.index)
-        .map((l) => (
+        .map((l) => (l.label === 'Resume' ? (
+          <a key={l.label} href="/resume_zhengfei.pdf" download target="_blank" rel="noopener noreferrer">
+            {l.label}
+          </a>
+        ) : (
           <Link key={l.label} to={l.path}>
             {l.label}
           </Link>
-        ))}
+        )))}
     </h1>
     <nav className="links">
       <ul>

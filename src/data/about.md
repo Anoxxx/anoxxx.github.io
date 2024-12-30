@@ -13,6 +13,6 @@ Metaphorically, I love duality and antithesis; you can find reasons or outcomes 
         I love reading. My favorite methods to present content are linear writing, like a history, and stream-of-consiousness writing that like a dream.
     </li>
     <li>
-        Sports are my passion, so does sleep.
+        Sports are my passion, so does sleep. 
     </li>
 </ul>

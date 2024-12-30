@@ -13,7 +13,8 @@ const publications = [
     title: 'An Invariant Information Geometric Method for High-Dimensional Online Optimization',
     link: 'https://proceedings.mlr.press/v242/zhang24d.html',
     authors: ['Zhengfei Zhang', 'Yunyue Wei', 'and Yanan Sui'],
-    year: 2024,    source: 'Proceedings of the 6th Annual Learning for Dynamics & Control Conference(L4DC), 2024',
+    year: 2024,
+    source: 'Proceedings of the 6th Annual Learning for Dynamics & Control Conference(L4DC), 2024',
     image: './figures/paper_01.png',
   },
 ];

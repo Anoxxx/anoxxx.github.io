@@ -19,14 +19,30 @@ const Index = () => (
             <Link to="/"> I dream</Link>
           </h2>
           <p>
-            a dream with duality and antithesis.
+            a dream with duality and antithesis<br />
+            a society where everyone prospers together
           </p>
         </div>
       </header>
       <p>
         {' '}
-        Welcome to my website, I am Zhengfei Zhang, or you can also call me Fei.
+        Welcome to my website, I am Zhengfei Zhang, or Fei in brief.
         <br /><br />
+        I am interested in decision-making that bridges artificial intelligence and societal needs:
+        Computational models give abstraction, societal systems give databases and constraints,
+        and decition-making with responsibility stands between.
+        Here are some topics that recently went to my mind and my hand:
+        <ul>
+          <li>
+            How does the outdated data and real-world constraints occur in societal systems
+            impose difficulties on reinforcement learning?
+            And how to address these difficulties provably?<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XibJqasAAAAJ&authuser=1&citation_for_view=XibJqasAAAAJ:u5HHmVD_uO8C"> [1]</a>
+          </li>
+          <li>
+            How to extract contextual variations and the implied preference in crafting incentives
+            from Chinese environmental governance documents ? [working thesis]
+          </li>
+        </ul>
         I am currently a{' '}
         <a href="https://www.schwarzmanscholars.org">Schwarzman Scholar</a>
         , studying for a Master of Global Affairs.
@@ -36,32 +52,11 @@ const Index = () => (
         specializing in Mechanics and Computer Science, and{' '}
         was awarded a degree with honors.
         <br /><br />
-        I am interested in the broad study of decision making theoretically and practically,
-        with a sustainability focus when it comes to real-world applications.
-        Here are some topics that recently went to my mind and my hand:
-        <ul>
-          <li>
-            How does the real world system impose difficulties on reinforcement learning?
-            And how to address these difficulties theoretically?<a href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=XibJqasAAAAJ&authuser=1&citation_for_view=XibJqasAAAAJ:u5HHmVD_uO8C"> [1]</a>
-          </li>
-          <li>
-            How do we extract the evolving decision-making procedures{' '}
-            from climate policy documents? [working thesis]
-          </li>
-        </ul>
-        One more thing.
-        I love duality and antithesis; you can find reasons or outcomes reflected in me.
-        <ul>
-          <li>My first name has a literal meaning of &apos;right and wrong&apos; in Chinese.</li>
-          <li>
-            My favorite city and my hometown is Hangzhou, China, where a great lake sits at the center of this prosperous city,{' '}
-            and thousands of years of culture lie within the lake.
-          </li>
-        </ul>
         Please feel free to read more{' '}
-        <Link to="/miscellanies">about me</Link>, or you can check out my{' '}
+        <Link to="/miscellanies">about me</Link>, check out my{' '}
         <a href="/resume_zhengfei.pdf" target="_blank" rel="noopener noreferrer">resume</a>{' '}
-        and <Link to="/publications">publications</Link>.
+        and <Link to="/publications">publications</Link>, or contact me via{' '}
+        <a href="mailto:trorooro@gmail.com">email</a>.
       </p>
       {/*
       <p>

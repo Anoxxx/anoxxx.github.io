@@ -21,7 +21,6 @@ const Main = (props) => (
     </Helmet>
     <div id="wrapper">
       <Navigation />
-      {props.fullPage ? <SideBar /> : null}
       <div id="main">{props.children}</div>
       {props.fullPage ? null : <SideBar />}
     </div>

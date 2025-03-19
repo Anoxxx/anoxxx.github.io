@@ -15,6 +15,10 @@ const routes = [
   {
     label: 'Resume',
     path: '/NotFound',
+  },  
+  {
+    label: 'Provincial Data',
+    path: '/provincial-data',
   },
 ];
 

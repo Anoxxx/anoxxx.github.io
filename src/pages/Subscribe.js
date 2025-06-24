@@ -15,7 +15,7 @@ const Subscribe = () => {
     setError('');
 
     // Use FormSubmit.co to send the form data to your email
-    fetch('https://formsubmit.co/ajax/trorooro@gmail.com', {
+    fetch('https://formsubmit.co/ajax/9380cb6c6149cb8e9fdcf028b0f55adf.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

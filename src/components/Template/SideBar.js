@@ -22,10 +22,10 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I am Zhengfei. I am a{' '}
+        Hi, I am Zhengfei. I am an alum of{' '}
         <a href="https://www.schwarzmanscholars.org/">Schwarzman Scholar</a>
-        {' '}and a Tsinghua{' '}
-        <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a> alumni.
+        {' '}and Tsinghua{' '}
+        <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a>.
         I try to connect artificial intelligence (decision-making)
         and real-world needs (education, climate and policy) in a bilateral way.
       </p>

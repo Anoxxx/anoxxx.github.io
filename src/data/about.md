@@ -1,10 +1,10 @@
-I always feel fortunate and strive to share this fortune with the society that shapes my purpose. The paths to achieving this purpose may vary, but its presence helps me prioritize when faced with too many choices.
+I always feel fortunate and strive to share this fortune with the society that shapes my purpose. The paths to achieving this purpose may vary, but its presence helps me prioritize potential options.
 
 <br />
 Metaphorically, I love duality and antithesis; you can find reasons or outcomes reflected in me.
 <ul>
     <li>
-        My first name has a literal meaning of &apos;right and wrong&apos; in Chinese.
+        My first name has a literal meaning of &apos;right and wrong&apos;, or &apos;yes, but...&apos; in Mandarin.
     </li>
     <li>
         My favorite city and my hometown is Hangzhou, China, where a great lake sits at the center of this prosperous city, and thousands of years of culture lie within the lake.

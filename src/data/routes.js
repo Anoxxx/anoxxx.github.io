@@ -5,20 +5,16 @@ const routes = [
     path: '/',
   },
   {
-    label: 'Publications',
-    path: '/publications',
+    label: 'Research',
+    path: '/research',
   },
   {
     label: 'Miscellanies',
     path: '/miscellanies',
   },
   {
-    label: 'Resume',
-    path: '/NotFound',
-  },  
-  {
-    label: 'Provincial Data',
-    path: '/provincial-data',
+    label: 'Subscribe',
+    path: '/subscribe',
   },
 ];
 

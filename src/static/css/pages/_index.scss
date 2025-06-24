@@ -1,0 +1,13 @@
+.mailing-list-link {
+  display: inline-block;
+  margin: 1em 0;
+  padding: 0.5em 0;
+  color: _palette(accent);
+  font-weight: bold;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    color: lighten(_palette(accent), 10%);
+    text-decoration: underline;
+  }
+}

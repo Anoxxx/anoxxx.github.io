@@ -1,7 +1,7 @@
 {
   "name": "anoxxx.github.io",
   "version": "4.0.0",
-  "homepage": "https://zhengfei.info/",
+  "homepage": "https://zhengfei.info",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -63,5 +63,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "reactSnap": {
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage",
+      "--disable-accelerated-2d-canvas",
+      "--no-first-run",
+      "--no-zygote",
+      "--single-process",
+      "--disable-gpu"
+    ],
+    "waitFor": 2000,
+    "timeout": 60000,
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    },
+    "skipThirdPartyRequests": true,
+    "cacheAjaxRequests": false
   }
 }

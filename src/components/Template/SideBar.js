@@ -22,12 +22,15 @@ const SideBar = () => (
     <section className="blurb">
       <h2>About</h2>
       <p>
-        Hi, I am Zhengfei. I am an alum of{' '}
+        Hi, I am Zhengfei.
+        I am building a startup to automate scientific research into information edges.
+        More broadly, in my previous research and industrial practice, I try
+        to connect artificial intelligence (decision-making)
+        and real-world needs (education, policy, and biotech) in a bilateral way.
+        I am an alum of{' '}
         <a href="https://www.schwarzmanscholars.org/">Schwarzman Scholar</a>
         {' '}and Tsinghua{' '}
         <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a>.
-        I try to connect artificial intelligence (decision-making)
-        and real-world needs (education, climate and policy) in a bilateral way.
       </p>
       <ul className="actions">
         <li>

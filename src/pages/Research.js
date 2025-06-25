@@ -19,6 +19,15 @@ const Research = () => {
             <p>A collection of research that I am not too ashamed of</p>
           </div>
         </header>
+        <p>
+          To me, research and entrepreneurship are quite alike: you are responsible for your work
+          and your team while creating something new. The allure of grounded exploration is my
+          antidote to modern or post-modern nihilism, which is why I have pursued both equally
+          for the past five years.
+          <br /><br />
+          Although I am now paving my way on the startup side, I remain passionate about
+          reading and conducting research, and I hope to continue doing so in the future.
+        </p>
         <div className="research-interests">
           <h3>Research Interests</h3>
           <p>
@@ -36,7 +45,7 @@ const Research = () => {
             </li>
             <li>
               How to extract contextual variations and the implied preference in crafting incentives
-              from Chinese environmental governance documents ? [working thesis]
+              from Chinese environmental governance documents ? [Master Thesis]
             </li>
           </ul>
         </div>

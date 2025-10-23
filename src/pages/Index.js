@@ -12,25 +12,28 @@ const Index = () => (
     <article className="post" id="index">
       <header>
         <div className="title">
-          <h2>
-            <Link to="/"> I dream</Link>
-          </h2>
+          <h3>
+            <Link to="/"> Calibrating AI into Real World</Link>
+          </h3>
           <p>
-            a dream about duality and antithesis<br />
-            a society where everyone prospers together
+            with a sincere dedication to social good.
           </p>
         </div>
       </header>
       <p>
         {' '}
-        Welcome to my website, I am Zhengfei, or Fei in brief.
+        Hi, I am Zhengfei, or Fei in brief.
         <br /><br />
-        <b>I am building a startup to automate scientific research into information edges</b>.
-        More boradly, my startup is built upon the intuition of general technology revolution:
+        <b>
+          I am building <a href="https://calibrate.bio">Calibrate Bio</a> to calibrate AI into clinical trials to
+          increase success rates.
+        </b>
+        <br />
+        Boradly, my startup is built upon the intuition of general technology revolution:
         <ul>
           <li>
             AI is automating
-            things into natural languages that unspecialized tasks and hierarchy;
+            things into natural interfaces to human that unspecialized tasks and hierarchy;
           </li>
           <li>
             Such unspecialization
@@ -40,8 +43,8 @@ const Index = () => (
         <Link to="/subscribe" className="mailing-list-link">Keep posted for future articles about these intuitions and my startup!</Link>
         <br />
         And please feel free to read more{' '}
-        <Link to="/miscellanies"><b>about me</b></Link>, check out my previous{' '}
-        <Link to="/research"><b>research</b></Link>, or contact me via{' '}
+        <Link to="/miscellanies">about me</Link>, check out my previous{' '}
+        <Link to="/research">research</Link>, or contact me via{' '}
         <a href="mailto:trorooro@gmail.com">email</a>.
         {/* Zhengfei(正非), in Mandarin,
         means &apos;correct and wrong&apos;, or, amusingly, &apos;yes, but..&apos;.

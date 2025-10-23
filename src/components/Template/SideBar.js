@@ -23,14 +23,15 @@ const SideBar = () => (
       <h2>About</h2>
       <p>
         Hi, I am Zhengfei.
-        I am building a startup to automate scientific research into information edges.
-        More broadly, in my previous research and industrial practice, I try
+        I am building <a href="https://calibrate.bio">Calibrate Bio</a> to calibrate AI into
+        clinical trials to increase success rates.
+        In my previous research and industrial practice, I try
         to connect artificial intelligence (decision-making)
         and real-world needs (education, policy, and biotech) in a bilateral way.
         I am an alum of{' '}
         <a href="https://www.schwarzmanscholars.org/">Schwarzman Scholar</a>
         {' '}and Tsinghua{' '}
-        <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a>.
+        <a href="https://www.teep.cnmm.tsinghua.edu.cn">Tsien&apos;s Class</a>, and an amateur competitive programming coach@IOI.
       </p>
       <ul className="actions">
         <li>

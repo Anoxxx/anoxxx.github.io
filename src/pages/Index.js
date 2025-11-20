@@ -25,8 +25,8 @@ const Index = () => (
         Hi, I am Zhengfei, or Fei in brief.
         <br /><br />
         <b>
-          I am cofounding <a href="https://calibrate.bio">Calibrate Bio</a> to calibrate AI into clinical trials to
-          increase success rates.
+          I am cofounding <a href="https://calibrate.bio">Calibrate Bio</a> to
+          calibrate AI into clinical trials to increase success rates.
         </b>
         <br />
         Boradly, our startup is built upon the intuition of general technology revolution:

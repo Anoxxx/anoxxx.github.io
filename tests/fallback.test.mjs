@@ -25,5 +25,5 @@ test('the committed fallback matches the deterministic model', async () => {
   const expected = renderEarthFallback(generateEarth(DEFAULT_SEED));
   const committed = await readFile(new URL('../earth-fallback.svg', import.meta.url), 'utf8');
 
-  assert.equal(committed, expected);
+  assert.equal(committed.replaceAll('\r\n', '\n'), expected);
 });

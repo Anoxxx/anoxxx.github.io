@@ -22,8 +22,8 @@ await Promise.all([
   copy('public/CNAME', 'CNAME'),
   copy('public/.nojekyll', '.nojekyll'),
   copy('public/robots.txt', 'robots.txt'),
-  copy('node_modules/p5.brush/dist/brush.esm.js', 'vendor/p5-brush.esm.js'),
-  copy('node_modules/p5.brush/LICENSE.md', 'vendor/p5-brush.LICENSE.md'),
+  copy('vendor/p5-brush.esm.js'),
+  copy('vendor/p5-brush.LICENSE.md'),
 ]);
 
 console.log('Built the static personal site in build/.');

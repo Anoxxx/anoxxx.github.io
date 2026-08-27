@@ -13,6 +13,20 @@ test('the first-class brush route pins the standalone package exactly', async ()
   assert.equal(lock.packages['node_modules/p5'], undefined);
 });
 
+test('the committed browser bundle matches the pinned package', async () => {
+  const [installed, committed, installedLicense, committedLicense] = await Promise.all([
+    readFile(new URL('../node_modules/p5.brush/dist/brush.esm.js', import.meta.url)),
+    readFile(new URL('../vendor/p5-brush.esm.js', import.meta.url)).catch(() => null),
+    readFile(new URL('../node_modules/p5.brush/LICENSE.md', import.meta.url)),
+    readFile(new URL('../vendor/p5-brush.LICENSE.md', import.meta.url)).catch(() => null),
+  ]);
+
+  assert.ok(committed, 'missing committed standalone brush bundle');
+  assert.ok(committedLicense, 'missing committed p5.brush license');
+  assert.deepEqual(committed, installed);
+  assert.deepEqual(committedLicense, installedLicense);
+});
+
 test('one concise API surface covers both material regimes', () => {
   assert.deepEqual(BRUSH_API, [
     'createCanvas', 'seed', 'noiseSeed', 'clear', 'scaleBrushes',

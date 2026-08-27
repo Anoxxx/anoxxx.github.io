@@ -21,3 +21,18 @@ test('one concise API surface covers both material regimes', () => {
   ]);
   assert.ok(BRUSH_API.length <= 17);
 });
+
+test('the test command is portable across shells', async () => {
+  const packageJson = JSON.parse(await readFile(new URL('../package.json', import.meta.url)));
+
+  assert.doesNotMatch(packageJson.scripts.test, /[*?\[\]]/);
+  for (const file of [
+    'brush-contract.test.mjs',
+    'build.test.mjs',
+    'earth-model.test.mjs',
+    'fallback.test.mjs',
+    'page.test.mjs',
+  ]) {
+    assert.match(packageJson.scripts.test, new RegExp(`tests/${file.replaceAll('.', '\\.')}`));
+  }
+});

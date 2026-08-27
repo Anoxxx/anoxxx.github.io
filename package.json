@@ -13,7 +13,7 @@
   },
   "type": "module",
   "scripts": {
-    "test": "node --test tests/*.test.mjs",
+    "test": "node --test tests/brush-contract.test.mjs tests/build.test.mjs tests/earth-model.test.mjs tests/fallback.test.mjs tests/page.test.mjs",
     "build": "node build.mjs",
     "predeploy": "npm test && npm run build"
   },

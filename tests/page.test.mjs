@@ -33,6 +33,40 @@ test('name, pronunciation, and all three English paragraphs are source-exact', a
   assert.doesNotMatch(candidate, /data-set-language|language-switch/);
 });
 
+test('the introduction names all three current interests', async () => {
+  const html = await readCandidate('index.html');
+  const interests = block(html, /<ul class="topics">([\s\S]*?)<\/ul>/i, 'current interests');
+
+  assert.match(html, /These days, I am particularly interested in the following topics:/);
+  assert.equal((interests.match(/<li>/g) ?? []).length, 3);
+  assert.match(interests, /<li>Point-in-time evaluation and agentic backtest<\/li>/);
+  assert.match(interests, /<li>AI safety, commercial service policy to public policy<\/li>/);
+  assert.match(interests, /<li>Agent–human interaction<\/li>/);
+});
+
+test('email and LinkedIn are accessible after the biography', async () => {
+  const html = await readCandidate('index.html');
+  const identity = html.match(/<header>([\s\S]*?)<\/header>/i)?.[1];
+  const biography = html.match(/<div class="biography">([\s\S]*?)<\/div>/i)?.[1];
+
+  assert.ok(identity);
+  assert.ok(biography);
+  assert.doesNotMatch(identity, /contact-links/);
+  assert.match(biography, /<\/p>\s*<nav class="contact-links" aria-label="Contact">/);
+  assert.match(biography, /href="mailto:fei@donutbrowser\.ai"[^>]*aria-label="Email Fei"/);
+  assert.match(biography, /href="https:\/\/www\.linkedin\.com\/in\/zhengfei111\/"[^>]*aria-label="Zhengfei Zhang on LinkedIn"/);
+  assert.equal((biography.match(/<svg\b[^>]*aria-hidden="true"/g) ?? []).length, 2);
+});
+
+test('topics and contact links preserve the existing reading system', async () => {
+  const css = await readCandidate('styles.css');
+
+  assert.match(css, /\.topics\s*\{/);
+  assert.match(css, /\.contact-links\s*\{/);
+  assert.match(css, /\.contact-link:focus-visible\s*\{/);
+  assert.doesNotMatch(css, /\.contact-link[^}]*border-radius:\s*999px/);
+});
+
 test('the page is one flat color with no paper or archival skin', async () => {
   const [html, css] = await Promise.all([readCandidate('index.html'), readCandidate('styles.css')]);
 

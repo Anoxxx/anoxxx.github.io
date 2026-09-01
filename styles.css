@@ -64,6 +64,38 @@ h1 {
   line-height: 1.5;
 }
 
+.contact-links {
+  display: flex;
+  gap: 0.72rem;
+  margin-top: 0.9rem;
+}
+
+.contact-link {
+  display: grid;
+  width: 1.75rem;
+  height: 1.75rem;
+  place-items: center;
+  color: var(--quiet);
+  text-decoration: none;
+}
+
+.contact-link svg {
+  width: 1.08rem;
+  height: 1.08rem;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.contact-link:hover { color: var(--ink); }
+
+.contact-link:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 0.18rem;
+}
+
 .biography {
   max-width: 45rem;
   margin-top: clamp(3.1rem, 6vh, 4rem);
@@ -78,6 +110,14 @@ h1 {
 }
 
 .biography p + p { margin-top: 1.18em; }
+
+.topics {
+  margin: 0.72em 0 0;
+  padding-left: 1.2em;
+}
+
+.topics li + li { margin-top: 0.18em; }
+.topics + p { margin-top: 1.18em; }
 
 .earth-stage {
   position: absolute;
@@ -173,6 +213,11 @@ earth-p5[data-motion="reduced"] .earth-canvas { transition: none; }
   .pronunciation {
     margin-top: 0.95rem;
     font-size: 0.66rem;
+  }
+
+  .contact-link {
+    width: 2.75rem;
+    height: 2.75rem;
   }
 
   .biography {

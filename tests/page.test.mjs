@@ -13,7 +13,7 @@ const block = (html, pattern, label) => {
   return normalize(value);
 };
 
-test('name, pronunciation, and all three English paragraphs are source-exact', async () => {
+test('name, pronunciation, and English biography are source-exact', async () => {
   const [source, candidate] = await Promise.all([
     readFile(sourcePath, 'utf8'),
     readCandidate('index.html'),
@@ -28,20 +28,19 @@ test('name, pronunciation, and all three English paragraphs are source-exact', a
   assert.equal(candidateName, sourceName);
   assert.equal(candidatePronunciation, sourcePronunciation);
   assert.equal(candidateBiography, sourceBiography);
-  assert.equal((candidateBiography.match(/<p>/g) ?? []).length, 3);
+  assert.equal((candidateBiography.match(/<p>/g) ?? []).length, 4);
   assert.doesNotMatch(candidate, /[\u3400-\u9fff]/);
   assert.doesNotMatch(candidate, /data-set-language|language-switch/);
 });
 
-test('the introduction names all three current interests', async () => {
+test('the biography describes both current activities and links all three destinations', async () => {
   const html = await readCandidate('index.html');
   const interests = block(html, /<ul class="topics">([\s\S]*?)<\/ul>/i, 'current interests');
 
-  assert.match(html, /These days, I am particularly interested in the following topics:/);
-  assert.equal((interests.match(/<li>/g) ?? []).length, 3);
-  assert.match(interests, /<li>Point-in-time evaluation and agentic backtest<\/li>/);
-  assert.match(interests, /<li>AI safety, commercial service policy to public policy<\/li>/);
-  assert.match(interests, /<li>Agent–human interaction<\/li>/);
+  assert.equal((interests.match(/<li>/g) ?? []).length, 2);
+  assert.match(interests, /href="https:\/\/getdonut\.ai">Donut AI<\/a>/);
+  assert.match(interests, /href="https:\/\/www\.scmp\.com\/opinion\/china-opinion\/article\/3373279\/us-and-china-must-join-hands-measure-rising-ai-tide\?module=top_story&amp;pgtype=section">South China Morning Post<\/a>/);
+  assert.match(html, /href="https:\/\/x\.com\/trorooro">X<\/a>/);
 });
 
 test('email and LinkedIn are accessible after the biography', async () => {
